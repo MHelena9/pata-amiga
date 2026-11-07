@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-paleta="tomate">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pata Amiga: adoção de gatos e cachorros. Escolha um animal e chame no WhatsApp. Sem cadastro e sem formulário.">
+  <meta name="theme-color" content="#c81e14">
+  <!-- Troque o telefone no atributo data-whatsapp da tag body (DDI 55 + DDD + número). -->
+  <title>Pata Amiga — Adoção de gatos e cachorros</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Literata:ital,opsz,wght@0,7..72,500;0,7..72,700;1,7..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c81e14'/%3E%3Ccircle cx='16' cy='18' r='6' fill='%23fff8ea'/%3E%3Ccircle cx='32' cy='12' r='6.5' fill='%23fff8ea'/%3E%3Ccircle cx='48' cy='18' r='6' fill='%23fff8ea'/%3E%3Cellipse cx='34' cy='42' rx='14' ry='12' fill='%23fff8ea'/%3E%3C/svg%3E">
+</head>
+<body data-whatsapp="5511999999999">
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <svg class="simbolos" aria-hidden="true">
+    <symbol id="icone-pata" viewBox="0 0 64 64">
+      <circle cx="16" cy="18" r="6" fill="currentColor"/>
+      <circle cx="32" cy="12" r="6.5" fill="currentColor"/>
+      <circle cx="48" cy="18" r="6" fill="currentColor"/>
+      <ellipse cx="34" cy="42" rx="14" ry="12" fill="currentColor"/>
+    </symbol>
+    <symbol id="icone-coracao" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 21s-6.7-4.4-9.3-8.2C.9 10.4 1.2 6.8 3.7 5.1 5.6 3.8 8.1 4.2 9.7 6l2.3 2.4L14.3 6c1.6-1.8 4.1-2.2 6-.9 2.5 1.7 2.8 5.3.9 7.6C18.7 16.6 12 21 12 21z"/>
+    </symbol>
+  </svg>
+
+  <div class="varal" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+  </div>
+
+  <header class="cabecalho">
+    <div class="miolo cabecalho__miolo">
+      <a class="marca" href="#inicio">
+        <span class="marca__medalha" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><use href="#icone-pata"/></svg>
+        </span>
+        Pata Amiga
+      </a>
+      <nav class="navegacao" aria-label="Principal">
+        <ul class="navegacao__lista">
+          <li><a class="navegacao__link" href="#animais">Animais</a></li>
+          <li><a class="navegacao__link" href="#como-adotar">Como adotar</a></li>
+          <li><a class="navegacao__link" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="cabecalho__acoes">
+        <p class="contador-favoritos" id="contador-favoritos" aria-live="polite">0 favoritos</p>
+        <button type="button" class="botao botao--contorno" id="botao-paleta">Trocar cores</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="letreiro" aria-hidden="true">
+    <div class="letreiro__trilho">
+      <p>Luna · Thor · Mia · Bob · Nina · Fred · Pipoca · Mel · adoção sem formulário · </p>
+      <p>Luna · Thor · Mia · Bob · Nina · Fred · Pipoca · Mel · adoção sem formulário · </p>
+    </div>
+  </div>
+
+  <main id="conteudo">
+    <section class="capa" id="inicio">
+      <div class="capa__patas" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><use href="#icone-pata"/></svg>
+        <svg viewBox="0 0 64 64"><use href="#icone-pata"/></svg>
+        <svg viewBox="0 0 64 64"><use href="#icone-pata"/></svg>
+      </div>
+      <div class="miolo capa__grade">
+        <div class="capa__texto">
+          <p class="fita-adesiva">Feira de domingo</p>
+          <h1 class="capa__titulo">O próximo morador tem quatro patas.</h1>
+          <p class="capa__resumo">Gatos e cachorros com foto, jeito e um botão de WhatsApp. Você escolhe no álbum e a visita se combina na conversa.</p>
+          <div class="capa__acoes">
+            <a class="botao botao--primario" href="#animais">Ver os animais</a>
+            <a class="botao botao--whatsapp atalho-whatsapp" data-texto="Olá! Vim pelo site Pata Amiga e quero conversar sobre adoção." href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+          </div>
+          <ul class="capa__contas">
+            <li><strong>4</strong> gatos</li>
+            <li><strong>4</strong> cachorros</li>
+            <li><strong>0</strong> formulários</li>
+          </ul>
+          <p class="carimbo">Sem cadastro</p>
+        </div>
+        <div class="mural">
+          <a class="mural__foto" href="#animal-luna">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&q=70" alt="Luna, gata preta e branca de olhos verdes, olhando para a câmera" width="900" height="1100">
+            <span class="mural__legenda">Luna</span>
+          </a>
+          <a class="mural__foto" href="#animal-thor">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=70" alt="Thor, cachorro dourado com a boca aberta em um sorriso" width="900" height="1100">
+            <span class="mural__legenda">Thor</span>
+          </a>
+          <a class="mural__foto" href="#animal-pipoca">
+            <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=900&q=70" alt="Pipoca, gatinha clara deitada e olhando para o lado" width="900" height="1100">
+            <span class="mural__legenda">Pipoca</span>
+          </a>
+          <a class="mural__foto" href="#animal-mel">
+            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=900&q=70" alt="Mel, cachorra de pelo claro com a língua para fora" width="900" height="1100">
+            <span class="mural__legenda">Mel</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--animais" id="animais" aria-labelledby="titulo-animais">
+      <div class="miolo">
+        <div class="secao__cabeca">
+          <h2 id="titulo-animais">Álbum da feira</h2>
+          <p>Oito histórias esperando um sofá. Filtre, favorite, abra o card ou deixe a sorte escolher uma cor.</p>
+        </div>
+        <div class="filtros" id="filtros" role="group" aria-label="Filtrar animais">
+          <button type="button" class="filtro" id="filtro-todos" data-especie="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="filtro" id="filtro-gatos" data-especie="gato" aria-pressed="false">Gatos</button>
+          <button type="button" class="filtro" id="filtro-cachorros" data-especie="cachorro" aria-pressed="false">Cachorros</button>
+          <button type="button" class="botao botao--surpresa" id="botao-surpresa">Sortear animal</button>
+        </div>
+        <p id="faixa-surpresa" class="faixa-surpresa" role="status" hidden></p>
+        <p id="aviso-vazio" class="aviso-vazio" hidden>Nenhum animal com esse filtro.</p>
+        <div class="grade-animais" id="grade-animais">
+          <article class="cartao-animal cartao-animal--entrando" id="animal-luna" data-especie="gato" data-nome="Luna" data-cor="#ffd1a8">
+            <figure class="cartao-animal__foto">
+              <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=70" alt="Luna, gata preta e branca de olhos verdes" width="800" height="800" loading="lazy">
+              <figcaption class="cartao-animal__selo">Gato</figcaption>
+            </figure>
+            <div class="cartao-animal__corpo">
+              <h3 class="cartao-animal__nome">Luna</h3>
+              <dl class="cartao-animal__ficha">
+                <div><dt>Idade</dt><dd>2 anos</dd></div>
+                <div><dt>Sexo</dt><dd>Fêmea</dd></div>
+                <div><dt>Porte</dt><dd>Médio</dd></div>
+              </dl>
+              <p class="cartao-animal__historia">Dorme no parapeito e cumprimenta com a cabeça. Combina com casa calma.</p>
+              <div class="cartao-animal__acoes">
+                <button type="button" class="botao botao--contorno" data-acao="detalhe">Conhecer</button>
+                <a class="botao botao--whatsapp atalho-whatsapp" data-texto="Olá! Tenho interesse em adotar a Luna." href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Quero adotar</a>
+                <button type="button" class="botao-favorito" aria-pressed="false" aria-label="Favoritar Luna">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icone-coracao"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartao-animal cartao-animal--entrando" id="animal-thor" data-especie="cachorro" data-nome="Thor" data-cor="#ffe08a">
+            <figure class="cartao-animal__foto">
+              <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=800&q=70" alt="Thor, cachorro dourado sorrindo" width="800" height="800" loading="lazy">
+              <figcaption class="cartao-animal__selo">Cachorro</figcaption>
+            </figure>
+            <div class="cartao-animal__corpo">
+              <h3 class="cartao-animal__nome">Thor</h3>
+              <dl class="cartao-animal__ficha">
+                <div><dt>Idade</dt><dd>3 anos</dd></div>
+                <div><dt>Sexo</dt><dd>Macho</dd></div>
+                <div><dt>Porte</dt><dd>Grande</dd></div>
+              </dl>
+              <p class="cartao-animal__historia">Abana para visita e já passeia de guia. Quer quintal ou uma volta todo dia.</p>
+              <div class="cartao-animal__acoes">
+                <button type="button" class="botao botao--contorno" data-acao="detalhe">Conhecer</button>
+                <a class="botao botao--whatsapp atalho-whatsapp" data-texto="Olá! Tenho interesse em adotar o Thor." href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Quero adotar</a>
+                <button type="button" class="botao-favorito" aria-pressed="false" aria-label="Favoritar Thor">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icone-coracao"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartao-animal cartao-animal--entrando" id="animal-mia" data-especie="gato" data-nome="Mia" data-cor="#d5c7f7">
+            <figure class="cartao-animal__foto">
+              <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=800&q=70" alt="Mia, gata cinza de olhos claros" width="800" height="800" loading="lazy">
+              <figcaption class="cartao-animal__selo">Gato</figcaption>
+            </figure>
+            <div class="cartao-animal__corpo">
+              <h3 class="cartao-animal__nome">Mia</h3>
+              <dl class="cartao-animal__ficha">
+                <div><dt>Idade</dt><dd>1 ano</dd></div>
+                <div><dt>Sexo</dt><dd>Fêmea</dd></div>
+                <div><dt>Porte</dt><dd>Pequeno</dd></div>
+              </dl>
+              <p class="cartao-animal__historia">Curiosa e rápida no arranhador. Aceita outro gato tranquilo.</p>
+              <div class="cartao-animal__acoes">
+                <button type="button" class="botao botao--contorno" data-acao="detalhe">Conhecer</button>
+                <a class="botao botao--whatsapp atalho-whatsapp" data-texto="Olá! Tenho interesse em adotar a Mia." href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Quero adotar</a>
+                <button type="button" class="botao-favorito" aria-pressed="false" aria-label="Favoritar Mia">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icone-coracao"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartao-animal cartao-animal--entrando" id="animal-bob" data-especie="cachorro" data-nome="Bob" data-cor="#b7e4c7">
+            <figure class="cartao-animal__foto">
+              <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=800&q=70" alt="Bob, cachorro de pelo escuro olhando para a frente" width="800" height="800" loading="lazy">
+              <figcaption class="cartao-animal__selo">Cachorro</figcaption>
+            </figure>
+            <div class="cartao-animal__corpo">
+              <h3 class="cartao-animal__nome">Bob</h3>
+              <dl class="cartao-animal__ficha">
+                <div><dt>Idade</dt><dd>5 anos</dd></div>
+                <div><dt>Sexo</dt><dd>Macho</dd></div>
+                <div><dt>Porte</dt><dd>Médio</dd></div>
+              </dl>
+              <p class="cartao-animal__historia">Aprendeu a esperar na porta. Prefere colo de filme a correria.</p>
+              <div class="cartao-animal__acoes">
+                <button type="button" class="botao botao--contorno" data-acao="detalhe">Conhecer</button>
+                <a class="botao botao--whatsapp atalho-whatsapp" data-texto="Olá! Tenho interesse em adotar o Bob." href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Quero adotar</a>
+                <button type="button" class="botao-favorito" aria-pressed="false" aria-label="Favoritar Bob">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icone-coracao"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartao-animal cartao-animal--entrando" id="animal-nina" data-especie="gato" data-nome="Nina" data-cor="#f8c8d8">
+            <figure class="cartao-animal__foto">
+              <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?auto=format&fit=crop&w=800&q=70" alt="Nina, gata de pelo claro caminhando sobre madeira" width="800" height="800" loading="lazy">
+              <figcaption class="cartao-animal__selo">Gato</figcaption>
+            </figure>
+            <div class="cartao-animal__corpo">
+              <h3 class="cartao-animal__nome">Nina</h3>
+              <dl class="cartao-animal__ficha">
+                <div><dt>Idade</dt><dd>4 anos</dd></div>
+                <div><dt>Sexo</dt><dd>Fêmea</dd></div>
+                <div><dt>Porte</dt><dd>Médio</dd></div>
+              </dl>
+              <p class="cartao-animal__historia">Observa antes de chegar perto. Quando confia, pede colo de noite.</p>
+              <div class="cartao-animal__acoes">
+                <button type="button" class="botao botao--contorno" data-acao="detalhe">Conhecer</button>
+                <a class="botao botao--whatsapp atalho-whatsapp" data-texto="Olá! Tenho interesse em adotar a Nina." href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Quero adotar</a>
+                <button type="button" class="botao-favorito" aria-pressed="false" aria-label="Favoritar Nina">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icone-coracao"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartao-animal cartao-animal--entrando" id="animal-fred" data-especie="cachorro" data-nome="Fred" data-cor="#c9e4ff">
+            <figure class="cartao-animal__foto">
+              <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&w=800&q=70" alt="Fred, filhote claro sentado na grama" width="800" height="800" loading="lazy">
+              <figcaption class="cartao-animal__selo">Cachorro</figcaption>
+            </figure>
+            <div class="cartao-animal__corpo">
+              <h3 class="cartao-animal__nome">Fred</h3>
+              <dl class="cartao-animal__ficha">
+                <div><dt>Idade</dt><dd>8 meses</dd></div>
+                <div><dt>Sexo</dt><dd>Macho</dd></div>
+                <div><dt>Porte</dt><dd>Pequeno</dd></div>
+              </dl>
+              <p class="cartao-animal__historia">Filhote de fôlego curto: brinca, desaba e recomeça. Precisa de paciência.</p>
+              <div class="cartao-animal__acoes">
+                <button type="button" class="botao botao--contorno" data-acao="detalhe">Conhecer</button>
+                <a class="botao botao--whatsapp atalho-whatsapp" data-texto="Olá! Tenho interesse em adotar o Fred." href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Quero adotar</a>
+                <button type="button" class="botao-favorito" aria-pressed="false" aria-label="Favoritar Fred">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icone-coracao"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartao-animal cartao-animal--entrando" id="animal-pipoca" data-especie="gato" data-nome="Pipoca" data-cor="#ffe5a0">
+            <figure class="cartao-animal__foto">
+              <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=800&q=70" alt="Pipoca, gatinha clara deitada" width="800" height="800" loading="lazy">
+              <figcaption class="cartao-animal__selo">Gato</figcaption>
+            </figure>
+            <div class="cartao-animal__corpo">
+              <h3 class="cartao-animal__nome">Pipoca</h3>
+              <dl class="cartao-animal__ficha">
+                <div><dt>Idade</dt><dd>6 meses</dd></div>
+                <div><dt>Sexo</dt><dd>Fêmea</dd></div>
+                <div><dt>Porte</dt><dd>Pequeno</dd></div>
+              </dl>
+              <p class="cartao-animal__historia">Cabe numa caixa de sapato e em qualquer colo que apareça.</p>
+              <div class="cartao-animal__acoes">
+                <button type="button" class="botao botao--contorno" data-acao="detalhe">Conhecer</button>
+                <a class="botao botao--whatsapp atalho-whatsapp" data-texto="Olá! Tenho interesse em adotar a Pipoca." href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Quero adotar</a>
+                <button type="button" class="botao-favorito" aria-pressed="false" aria-label="Favoritar Pipoca">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icone-coracao"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartao-animal cartao-animal--entrando" id="animal-mel" data-especie="cachorro" data-nome="Mel" data-cor="#ffd0c2">
+            <figure class="cartao-animal__foto">
+              <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=800&q=70" alt="Mel, cachorra clara com a língua de fora" width="800" height="800" loading="lazy">
+              <figcaption class="cartao-animal__selo">Cachorro</figcaption>
+            </figure>
+            <div class="cartao-animal__corpo">
+              <h3 class="cartao-animal__nome">Mel</h3>
+              <dl class="cartao-animal__ficha">
+                <div><dt>Idade</dt><dd>2 anos</dd></div>
+                <div><dt>Sexo</dt><dd>Fêmea</dd></div>
+                <div><dt>Porte</dt><dd>Médio</dd></div>
+              </dl>
+              <p class="cartao-animal__historia">Senta quando pedem e adora companhia no sofá. Late pouco.</p>
+              <div class="cartao-animal__acoes">
+                <button type="button" class="botao botao--contorno" data-acao="detalhe">Conhecer</button>
+                <a class="botao botao--whatsapp atalho-whatsapp" data-texto="Olá! Tenho interesse em adotar a Mel." href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Quero adotar</a>
+                <button type="button" class="botao-favorito" aria-pressed="false" aria-label="Favoritar Mel">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icone-coracao"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--passos" id="como-adotar" aria-labelledby="titulo-passos">
+      <div class="miolo">
+        <div class="secao__cabeca">
+          <h2 id="titulo-passos">Como a adoção anda</h2>
+          <p>Quatro passos, nenhum deles é um cadastro.</p>
+        </div>
+        <ol class="passos">
+          <li class="passo">
+            <h3>Escolha no álbum</h3>
+            <p>Filtre gatos ou cachorros e abra o card para ler idade, porte e jeito.</p>
+          </li>
+          <li class="passo">
+            <h3>Favorite para comparar</h3>
+            <p>O coração muda de cor. O contador no topo guarda a sua lista neste navegador.</p>
+          </li>
+          <li class="passo">
+            <h3>Chame no WhatsApp</h3>
+            <p>A mensagem já sai com o nome do animal. A conversa segue por lá.</p>
+          </li>
+          <li class="passo">
+            <h3>Combine a visita</h3>
+            <p>Vocês marcam um encontro antes de qualquer mudança de casa.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="secao secao--combinado" id="combinado" aria-labelledby="titulo-combinado">
+      <div class="miolo combinado">
+        <article class="nota nota--grande">
+          <h2 id="titulo-combinado">O combinado</h2>
+          <p>Adoção responsável, conversada no WhatsApp, no ritmo de quem vai dividir a casa.</p>
+        </article>
+        <article class="nota">
+          <h3>Vacina e castração</h3>
+          <p>Quando a idade permite, o animal segue castrado e com a vacina em dia.</p>
+        </article>
+        <article class="nota">
+          <h3>Visita antes da mudança</h3>
+          <p>Ninguém vai para casa no escuro. Primeiro a gente se encontra.</p>
+        </article>
+        <article class="nota nota--larga">
+          <h3>Adaptação com recado</h3>
+          <p>Nos primeiros dias, a conversa continua no WhatsApp para ajuste de rotina, comida e canto da casa.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao secao--contato" id="contato" aria-labelledby="titulo-contato">
+      <div class="miolo">
+        <div class="contato">
+          <p class="fita-adesiva">Só mensagem</p>
+          <h2 id="titulo-contato">A conversa começa no WhatsApp.</h2>
+          <p>Mande um oi quando quiser. A visita se marca na própria conversa, de manhã ou à tarde.</p>
+          <a class="botao botao--whatsapp atalho-whatsapp" data-texto="Olá! Vim pelo site Pata Amiga e quero conversar sobre adoção." href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Abrir conversa no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="miolo rodape__miolo">
+      <p class="marca">
+        <span class="marca__medalha" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><use href="#icone-pata"/></svg>
+        </span>
+        Pata Amiga
+      </p>
+      <p>Adoção de gatos e cachorros, com conversa direta no WhatsApp.</p>
+      <nav aria-label="Rodapé">
+        <ul class="rodape__lista">
+          <li><a href="#animais">Animais</a></li>
+          <li><a href="#como-adotar">Como adotar</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <p class="rodape__nota">Sem cadastro e sem formulário.</p>
+    </div>
+  </footer>
+
+  <a class="botao-flutuante atalho-whatsapp" data-texto="Olá! Vim pelo site Pata Amiga e quero conversar sobre adoção." href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+
+  <dialog class="dialogo" id="dialogo-animal" aria-labelledby="dialogo-titulo">
+    <div class="dialogo__painel">
+      <button type="button" class="dialogo__fechar" id="dialogo-fechar">Fechar</button>
+      <img class="dialogo__foto" id="dialogo-foto" alt="" width="800" height="480">
+      <p class="dialogo__selo" id="dialogo-especie"></p>
+      <h2 class="dialogo__titulo" id="dialogo-titulo"></h2>
+      <dl class="dialogo__ficha" id="dialogo-ficha"></dl>
+      <p class="dialogo__historia" id="dialogo-historia"></p>
+      <a class="botao botao--whatsapp" id="dialogo-whatsapp" href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+    </div>
+  </dialog>
+
+  <noscript>
+    <p class="aviso-js">Os filtros, as cores e os favoritos usam JavaScript. Os animais e o WhatsApp continuam nesta página.</p>
+  </noscript>
+
+  <script src="js/interacoes.js"></script>
+</body>
+</html>
